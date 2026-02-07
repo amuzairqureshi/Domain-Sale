@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <title>Domain For Sale</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -14,36 +17,36 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   background:#ffffff;
   color:#111;
 }
 
 .container{
   text-align:center;
-  max-width:600px;
+  max-width:620px;
 }
 
 /* Domain */
 .domain{
-  font-size:46px;
+  font-size:48px;
   font-weight:700;
   margin-bottom:6px;
 }
 
-/* Property line (bigger now) */
+/* Property line */
 .owner{
   font-size:17px;
   font-weight:500;
   color:#333;
 }
 
-/* Horizontal divider */
+/* Divider */
 .divider{
   width:90px;
   height:2px;
   background:#ddd;
-  margin:26px auto 34px auto; /* extra gap after line */
+  margin:26px auto 36px auto;
 }
 
 /* Contact */
@@ -57,7 +60,29 @@ body{
   text-decoration:none;
 }
 
-/* Social icons (no lines, clean) */
+/* Offer button */
+.offer{
+  margin-bottom:26px;
+}
+
+.offer a{
+  display:inline-block;
+  padding:12px 26px;
+  border:1px solid #111;
+  border-radius:6px;
+  text-decoration:none;
+  color:#111;
+  font-size:14px;
+  font-weight:500;
+  transition:0.2s;
+}
+
+.offer a:hover{
+  background:#111;
+  color:#fff;
+}
+
+/* Social icons */
 .social{
   margin-bottom:22px;
 }
@@ -74,7 +99,7 @@ body{
   color:#777;
 }
 
-/* Footer line */
+/* Footer */
 .footer{
   font-size:13px;
   color:#777;
@@ -101,6 +126,12 @@ body{
     </a>
   </div>
 
+  <div class="offer">
+    <a href="mailto:meuzairqureshi@email.com?subject=Domain%20Purchase%20Inquiry">
+      Make an Offer
+    </a>
+  </div>
+
   <div class="social">
     <a href="https://facebook.com/meuzairqureshi" target="_blank">
       <i class="fa-brands fa-facebook"></i>
@@ -114,7 +145,7 @@ body{
   </div>
 
   <div class="footer">
-    Premium domain available for purchase
+    Premium domain available • Secure transfer via Escrow
   </div>
 
 </div>
