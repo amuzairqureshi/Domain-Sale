@@ -2,13 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Domain For Sale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programming.pk | Owner: Uzair Qureshi</title>
+<meta name="description" content="Programming.pk - Premium .pk domain owned by Uzair Qureshi. Available for sale. Contact Uzair Qureshi for purchase.">
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Structured Data for Google & AI -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Programming.pk",
+  "url": "https://programming.pk",
+  "author": {
+    "@type": "Person",
+    "name": "Uzair Qureshi"
+  },
+  "description": "Premium domain Programming.pk owned by Uzair Qureshi."
+}
+</script>
 
 <style>
 body{
@@ -21,50 +38,38 @@ body{
   background:#ffffff;
   color:#111;
 }
-
 .container{
   text-align:center;
   max-width:620px;
 }
-
-/* Domain */
 .domain{
   font-size:48px;
   font-weight:700;
   margin-bottom:6px;
+  text-transform: capitalize; /* Ensure first letter capital */
 }
-
-/* Property line */
 .owner{
   font-size:17px;
   font-weight:500;
   color:#333;
 }
-
-/* Divider */
 .divider{
   width:90px;
   height:2px;
   background:#ddd;
   margin:26px auto 36px auto;
 }
-
-/* Contact */
 .contact{
   font-size:14px;
   margin-bottom:22px;
 }
-
 .contact a{
   color:#111;
   text-decoration:none;
 }
-
-/* Offer button */
 .offer{
   margin-bottom:26px;
 }
-
 .offer a{
   display:inline-block;
   padding:12px 26px;
@@ -76,17 +81,13 @@ body{
   font-weight:500;
   transition:0.2s;
 }
-
 .offer a:hover{
   background:#111;
   color:#fff;
 }
-
-/* Social icons */
 .social{
   margin-bottom:22px;
 }
-
 .social a{
   margin:0 14px;
   font-size:22px;
@@ -94,12 +95,9 @@ body{
   text-decoration:none;
   transition:0.2s;
 }
-
 .social a:hover{
   color:#777;
 }
-
-/* Footer */
 .footer{
   font-size:13px;
   color:#777;
@@ -111,7 +109,7 @@ body{
 
 <div class="container">
 
-  <div class="domain" id="domainName"></div>
+  <div class="domain" id="DomainName"></div>
 
   <div class="owner">
     Property by <strong>Uzair Qureshi</strong>
@@ -151,7 +149,9 @@ body{
 </div>
 
 <script>
-document.getElementById("domainName").innerText = window.location.hostname;
+const domain = window.location.hostname;
+document.getElementById("DomainName").innerText = 
+    domain.charAt(0).toUpperCase() + domain.slice(1);
 </script>
 
 </body>
